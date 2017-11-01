@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
@@ -238,18 +237,74 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-}
-
 
 @media screen and (max-width: 980px) {
 
+  #logo {
+  float: left;
+  margin: 0 70px 0;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+nav {
+  float: left;
+  margin-top: 25px;
+  margin-left: 112px;
+  padding-right: -10px;
+}
+  .main-section {
+  float: center;
+  width: 40%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 70px 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+ .auth-image {
+  float: left;
+  width: 320px;
+  height: auto;
+  margin: 10px 10px 10px 0;
+}
+
+  .sidebar {
+  float: left;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
 }
 
 @media screen and (max-width: 768px) {
-  #logo {
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+#logo {
   float: left;
   width: 250px;
   height: 90px;
+  margin-left: 22px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
@@ -263,28 +318,28 @@ input[type=submit] {
 nav {
   float: right;
   margin-top: 25px;
-  margin-right: 25px;
 }
 
-#masthead {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
-  margin-right: 30px;
-  border: 30px;
-  overflow: auto;
-  color: #fff;
-  background: #fff;
-  border-bottom: 2px solid #ccc;
-
+nav a {
+  display: inline-block;
+  padding-left: 12px;
+  margin-left: 5px;
+  margin-right: 13px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
 }
 
 .main-section {
-  width: 100%;
-  max-width: 650px;
+  float: none;
+  width: 94%;
+  max-width: 768px;
   padding: 30px;
-  margin: 20px 20px 0;
+  margin-top: 10px
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   background: #fff;
   border: 1px solid #ddd;
 }
@@ -296,10 +351,13 @@ nav {
 }
 
 .sidebar {
-  width: 100%;
-  max-width: 640px;
+  float: none;
+  width: 94%;
+  max-width: 768px;
   padding: 30px;
-  margin: 20px 20px 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background: #fff;
   border: 1px solid #ddd;
 }
@@ -307,9 +365,6 @@ nav {
 
 @media screen and (max-width: 640px) {
 
-*{
-  margin: auto 0;
-}
 #logo {
   width: 100%;
   height: 90px;
@@ -323,29 +378,19 @@ nav {
   background: #4aaaa5;
 }
 
-#masthead {
-  /*position: fixed;*/
-  z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
-  margin-right: 30px;
-  border: 30px;
-  overflow: auto;
-  color: #fff;
-  background: #fff;
-  border-bottom: 2px solid #ccc;
-}
-
   .main-section {
   float: none;
-  width: 95%;
+  width: 94%;
   max-width: 640px;
-  padding: 30px;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 30px, 30px, 30px;
   background: #fff;
-  border: 1px solid #ddd;
+  border: px solid #ddd;
 }
 
-}
+
 nav {
   text-align: center;
   width: 100%;
@@ -354,8 +399,9 @@ nav {
 
 nav a {
   display: inline-block;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 50px
   margin-left: 15px;
   line-height: 18px;
   color: #999;
@@ -364,7 +410,7 @@ nav a {
 }
 
 .auth-image {
-  float: left;
+  margin: auto 0;
   width: 98%;
   height: auto;
   margin-top: 10px;
@@ -374,14 +420,14 @@ nav a {
 
 .sidebar {
   float: none;
-  width: 95%;
+  margin: auto 0;
+  width: 94%;
   max-width: 640px;
   padding: 30px;
+  margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #ddd;
 }
 }
-
-
